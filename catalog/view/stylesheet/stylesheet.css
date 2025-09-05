@@ -159,11 +159,8 @@ button:focus {
 }
 /* menu */
 #menu {
-  background-color: #229ac8;
-  background-image: linear-gradient(to bottom, #23a1d1, #1f90bb);
-  background-repeat: repeat-x;
-  border: 1px solid #1f90bb;
-  border-color: #1f90bb #1f90bb #145e7a;
+  background-color: #f57c00 !important; /* Gold */
+  border: 1px solid #B7950B; /* Darker gold border */
   min-height: 40px;
   border-radius: 4px;
   padding: 0 1rem;
@@ -478,3 +475,95 @@ footer h5 {
 /* #checkout-shipping-method {
     display: none !important;
 } */
+
+/* Top bar and menu background colors */
+#top {
+  background-color: #FFFFFF !important; /* White */
+  color: #333333 !important;
+}
+#menu {
+  background-color: #f57c00 !important; /* Green */
+}
+
+/* Menu navigation link color */
+#menu .nav > li > a {
+  color: #FFFFFF !important; /* White text */
+}
+
+/* Ensure text/icons inside #top are dark grey for visibility */
+#top,
+#top a,
+#top .list-inline-item > a,
+#top .list-inline-item .dropdown > a,
+#top i,
+#top span,
+#top li {
+  color: #333333 !important;
+}
+
+
+#menu .nav > li > a:hover {
+  background-color: #f57c00 !important; /* Gold hover */
+  color: #FFFFFF !important;
+}
+
+/* Custom BrajRas Theme Colors */
+
+/* Buttons */
+.btn, .button, .btn-primary {
+  background-color: #f57c00 !important; /* Green */
+  border: none;
+  color: #FFFFFF !important;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover, .button:hover, .btn-primary:hover {
+  background-color: #f57c00 !important; /* Gold hover */
+  color: #2C2C2C !important;
+}
+
+/* Prices */
+.price, .product-price {
+  color: #5e4c02 !important; /* Gold price */
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  background-color: #2C2C2C !important; /* Dark grey */
+  color: #FFFFFF !important;
+}
+
+footer a {
+  color: #FFFFFF !important; /* White links */
+}
+
+footer a:hover {
+  color: #f57c00 !important; /* Gold hover */
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #5e4c02 !important; /* Green headings */
+}
+
+footer h5 {
+  color: #f0d155 !important; /* Green headings */
+}
+
+/* Navbar hover effect */
+#menu .navbar-nav > li > a:hover {
+  background-color: #f57c00 !important;
+  color: #FFFFFF !important;
+}
+/* Product title links color */
+.product-thumb h4 a,
+a,
+.product-thumb .description h4 a {
+  color: #006400 !important; /* Dark Green */
+}
+#logo img {
+    max-width: 100px !important;
+}

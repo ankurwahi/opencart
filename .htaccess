@@ -1,0 +1,23 @@
+# BEGIN: TEMP HTACCESS TEST
+# If this redirect works, .htaccess is being read
+Redirect 302 /opencart/_htaccess_test /opencart/
+
+# If this rewrite works, mod_rewrite rules are working
+RewriteEngine On
+RewriteBase /opencart/
+RewriteRule ^_rewritetest$ index.php?route=common/home [L,QSA]
+# END: TEMP HTACCESS TEST
+<IfModule mod_rewrite.c>
+    Options +FollowSymLinks
+    RewriteEngine On
+    RewriteBase /opencart/
+
+    # Remove index.php
+    RewriteCond %{THE_REQUEST} /index\.php [NC]
+    RewriteRule ^index\.php(.*)$ $1 [R=301,L]
+
+    # SEO-friendly URLs
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^([^?]*) index.php?_route_=$1 [L,QSA]
+</IfModule>
