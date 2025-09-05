@@ -1,0 +1,8 @@
+{
+  "name": "Cashfree Payments",
+  "version": "1.0.0",
+  "author": "Cashfree",
+  "code": "cashfree",
+  "link": "https://www.cashfree.com",
+  "description": "Official Cashfree Payments extension for OpenCart. Accept payments via UPI, Credit/Debit Cards, Net Banking, and Wallets with seamless checkout and easy integration."
+}
